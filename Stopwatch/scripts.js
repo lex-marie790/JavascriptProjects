@@ -11,6 +11,9 @@ const startButton = stopWatch.querySelector('.startButton');
 const pauseButton = stopWatch.querySelector('.pauseButton');
 const resetButton = stopWatch.querySelector('.resetButton');
 const toggle = stopWatch.querySelector('.toggle');
+const secDisplay = stopWatch.querySelector('#displayS');
+const minDisplay = stopWatch.querySelector('#displayM');
+const hrDisplay = stopWatch.querySelector('#displayH');
 
 function setMs() {
 	// if milliseconds is less than 10, add a 0 to the beginning, otherwise leave as it
@@ -108,7 +111,11 @@ function reset() {
 	clearInterval(msVar);
 }
 
+
 // adding event listeners
 startButton.addEventListener('click', start);
 pauseButton.addEventListener('click', pause);
 resetButton.addEventListener('click', reset);
+
+
+
