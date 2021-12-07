@@ -4,27 +4,36 @@
 		<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 		<link href="style.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="./assets/css/all.css">
 		<title>Stop Watch</title>
 	</head>
 	<body>
 		<div class="stopwatch">
-			<h1>STOPWATCH</h1>
-			<div class='stopWatchNumbers'>
-				<p>
-					<span id="displayM" class='buttonIcon'>00</span>:<span id="displayS" class='buttonIcon'>00</span>:<span id="displayMs" class='buttonIcon'>00</span>	
-				</p>	
-			</div>
-			
-
-			<div class="buttons">
-				<button class="startButton  toggle">►</button>
-				<button class="pauseButton">❚❚</button>
-				<button class="resetButton"><i class="fa fa-stop-circle"></i></button>
+			<div class="border">
+				<h1>STOPWATCH</h1>
+				<div class="stopWatchNumbers">
+					<p>
+						<span id="displayM" class="buttonIcon">00</span>:<span
+							id="displayS"
+							class="buttonIcon"
+							>00</span
+						>:<span id="displayMs" class="buttonIcon">00</span>
+					</p>
+				</div>
+				<div class="buttons">
+					<button class="startButton toggle"><i class="fas fa-play fa-2x"></i>
+					</button>
+					<button class="pauseButton"><i class="fas fa-pause fa-2x"></i></button>
+					<button class="resetButton"><i class="fas fa-stop fa-2x"></i>
+					</button>
+				</div>
 			</div>
 		</div>
-      
-      
+
 		<script src="scripts.js"></script>
 	</body>
 </html>
